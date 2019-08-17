@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PDHPE Road Safety Campaign</title>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/faviconapple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="manifest" href="images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+      <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet"/>
+
+    <style>
+       *{
+         font-family: Comfortaa;
+       }
+      /* Common CSS for the Navbar */
+      .navbar {
+        margin-bottom: 0;
+        background-color: #5BC0EB !important;
+        z-index: -1;
+        border: 0;
+        line-height: 1.42 !important;
+        letter-spacing: 2px;
+        border-radius: 0;
+      }
+      .navbar li a,
+      .navbar .navbar-brand {
+        color: #fff !important;
+      }
+      .navbar-nav li a:hover,
+      .navbar-nav li.active a {
+        color: #5BC0EB !important;
+        background-color: #edf67d !important;
+      }
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #edf67d !important;
+      }
+      .navbar {
+        font-size: 18px;
+      }
+      .navbar li a,
+      .navbar .navbar-brand {
+        font-size: 18px;
+      }
+      .navbar-nav li a:hover,
+      .navbar-nav li.active a {
+        font-size: 18px;
+      }
+      .navbar-default .navbar-toggle {
+        font-size: 18px;
+      }
+      .jumbotron {
+        background-size: cover !important;
+        margin-bottom: 0px !important;
+        z-index: 0 !important;
+        position: fixed;
+        background: #cccccc url("images/background.jpg") no-repeat fixed center;
+        height: 100vh;
+        width: 100vw;
+      }
+      .jumbotron-content {
+        color: #5BC0EB;
+        text-shadow: #211A1E 0.3em 0.3em 0.3em !important;
+        transform: translate(-50%, -50%) !important;
+        width: 100% !important;
+        position: absolute !important;
+        top: 45% !important;
+        left: 50% !important;
+      }
+      .down-arrow {
+	width:50px;
+	position: absolute;
+	display: block;
+	top: 50vh;
+	left: 48.5%;
+	transform: translate(-50%, -50%);
+	z-index: 0 !important;
+}
+
+      .pagecontent{
+	z-index: 0 !important;
+	position: absolute;
+}
+.container-fluid {
+	padding: 60px 15% !important;
+	line-height: 1.8 !important;
+	width: 100vw;
+}
+.textwhite{
+	color:white !important;
+}
+      .pagecontent{
+	top: 100vh;
+}
+.bg-blue {
+   background-color: #5BC0EB !important;
+}
+.bg-grey {
+	background-color: #211A1E !important;
+}
+.bg-white{
+	background-color: white !important;
+}
+/* CSS Specific for the Page Content of this page */
+
+.pagecontent{
+	top: 100vh;
+}
+.intro-container-fluid{
+	padding: 60px 8%;
+	line-height: 2;
+	letter-spacing:0.1px;
+	width: 100vw;
+}
+.www-panel {
+	border: 1px solid #C3423F;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+.html-panel {
+	border: 1px solid #FDE74C;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+.css-panel {
+	border: 1px solid #9BC53D;
+	border-radius:0;
+	transition: box-shadow 0.5s;
+}
+.www-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.html-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.css-panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+.www-panel-heading {
+	color: #fff !important;
+	background-color: #C3423F !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.html-panel-heading {
+	color: #fff !important;
+	background-color: #FDE74C !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.css-panel-heading {
+	color: #fff !important;
+	background-color: #9BC53D !important;
+	padding: 25px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.www-panel-body {
+	padding: 20px;
+	text-align: Justify;
+	margin: 0px 0px 1.33% 0px;
+}
+.html-panel-body {
+	padding: 20px;
+	text-align: Justify;
+}
+.css-panel-body {
+	padding: 20px;
+	text-align: Justify;
+	margin: 0px 0px 6.45% 0px;
+}
+.html-panel-footer{
+	margin: -30px 0px 15px 0px;
+	color: #fff;
+}
+.css-panel-footer {
+	margin: -30px 0px 15px 0px;
+	color: #fff;
+}
+
+    </style>
+    <!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--This Framework is Bootstrap. We have used it the way the developers had intend and it can be found here: https://getbootstrap.com/-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--Navbar-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#mainNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PDHPE Road Safety Campaign</a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="textwhite jumbotron text-center">
+      <div class="jumbotron-content">
+        <h1>Road Safety Campaign</h1>
+        <h3>By Sithum Dissanayake</h3>
+        <a href="#introductions">
+         <img class="down-arrow animated infinite slideInDown" src="images/arrows/down-arrow.png" alt="downarrow"/>
+         </a>
+      </div>
+    </div>
+    <div class="pagecontent bg-white" id="introductions">
+            <!--Intro To Flow Coding and What It Will Teach-->
+            <div class="container-fluid bg-blue text-center textwhite">
+               <h2>Hey You!</h2>
+               <h4 class="text-center">Are you a teenager planning to get a licence? Well before you do start applying for your licence it is very important that you know all the risks before you get on the road. Many of these risks will be outlined on this site. </h4>
+               <br/>
+            </div>
+            <!-- Introductions to WWW, HTML and CSS -->
+            <div class="intro-container-fluid  bg-white">
+               <div class="row">
+                  <div class="col-sm-4">
+                     <div class="www-panel www-panel-default text-center">
+                        <div class="www-panel-heading">
+                           <h2>The World Wide Web</h2>
+                        </div>
+                        <div class="www-panel-body">
+                           <h4>The World Wide Web (known as the WWW) is an space where documents and other web resources are identified by Uniform Resource Locators (URLs). These resources are linked through the use of hypertext links. These links are found from networks which link up the whole entire web to what we know as the internet. These networks aid search engines to find different URLs to be seen by the consumer. The World Wide Web, or just "the Web," as ordinary people call it, is a subgroup of the Internet. The Web consists of pages that can be accessed using a Web browser. The Internet is the actual network of networks where all the information resides With hypertext, a word or phrase can contain a link to another Web site. All Web pages are written in the hypertext markup language (HTML), which works in conjunction with HTTP, which is the hypertext protocol.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="html-panel html-panel-default text-center">
+                        <div class="html-panel-heading">
+                           <h2>Hypertext Markup Language</h2>
+                        </div>
+                        <div class="html-panel-body">
+                           <h4>Hypertext Markup Language or more commenly known as HTML is a fairly simple language made up of elements. These elements can be applied to pieces of text to give them different meaning in a document (is it a paragraph? is it a bulleted list? is it part of a table?), structure a document into logical sections (does it have a header? three columns of content? a navigation menu?) and embed content such as images and videos into a page. HTML elements are the building blocks of HTML pages and HTML elements are represented by tags. Browsers do not display the HTML tags, but use them to render the content of the page. When a browser opens an HTML file, the browser will look for HTML codes in the text and use them to change the layout, insert images, or create links to other pages.</h4>
+                        </div>
+                        <div class="html-panel-footer">
+                           <a href="A.HTML/index.html" class="btn btn-lg" role="button">Start Learning HTML Now!</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-sm-4">
+                     <div class="css-panel css-panel-default text-center">
+                        <div class="css-panel-heading">
+                           <h2>Cascading Style Sheets</h2>
+                        </div>
+                        <div class="css-panel-body">
+                           <h4>
+                              CSS or Cascading Style Sheets is the is a language that describes the style of an HTML document. This shows how the webpage will be viewed aesthetically. CSS is extremely effective for preserving time with formatting. This is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content. The final stage of the Flow.
+                           </h4>
+                        </div>
+                        <div class="css-panel-footer">
+                           <a href="B.CSS/index.html" class="btn btn-lg">Start Learning CSS Now!</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Footer/Glossary-->
+            <div class="container-fluid text-center bg-grey textwhite">
+               <div class="row">
+                  <div class="col-sm-12 text-center">
+                     <a href="#top">
+                     <img src="images/footer/uparrow.png" alt="uparrow" width="25"/>
+                     </a>
+                     <br/>
+                     <br/>
+                     <hr/>
+                     <br/>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-3 text-center">
+                     <h4>
+                        <strong>Contact Us</strong>
+                     </h4>
+                     <a href="mailto:sithum.dissanayake@cgs.act.edu.au">
+                        <h5><img src="images/footer/mailicon.png" alt="mail-icon" width="25"/> Sithum Dissanayake</h5>
+                     </a>
+                     <a href="mailto:daniel.pan@cgs.act.edu.au">
+                        <h5><img src="images/footer/mailicon.png" alt="mail-icon" width="25"/> Daniel Pan</h5>
+                     </a>
+                     <a href="https://twitter.com/Coding_Flow">
+                        <h5><img src="images/footer/twitterbirdicon.png" alt="twitter-bird" width="25"/> @Coding_Flow</h5>
+                     </a>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                     <h5><strong>Main Pages</strong></h5>
+                     <a href="#">
+                        <h6>Home Page</h6>
+                     </a>
+                     <a href="A.HTML/index.html">
+                        <h6>HTML Main Page</h6>
+                     </a>
+                     <a href="B.CSS/index.html">
+                        <h6>CSS Main Page</h6>
+                     </a>
+                     <a href="All-together.html">
+                        <h6>Final Activity</h6>
+                     </a>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                     <h5><strong>HTML Lessons</strong></h5>
+                     <a href="A.HTML/lessons/C-Creating-your-first-web-page.html">
+                        <h6>Creating Your First Web Page</h6>
+                     </a>
+                     <a href="A.HTML/lessons/D-Common-HTML-tags.html">
+                        <h6>Common HTML Tags</h6>
+                     </a>
+                     <a href="A.HTML/lessons/E-Images-and-Videos.html">
+                        <h6>Images and Videos</h6>
+                     </a>
+                     <a href="A.HTML/lessons/F-Lists-and-Tables.html">
+                        <h6>Lists and Tables</h6>
+                     </a>
+                     <a href="A.HTML/lessons/G-XHTML-1_0-Strict-Validation.html">
+                        <h6>XHTML 1.0 Strict Validation</h6>
+                     </a>
+                     <a href="A.HTML/lessons/H-Multi-page-websites.html">
+                        <h6>Multi-page Websites</h6>
+                     </a>
+                     <a href="A.HTML/lessons/I-File-organisation.html">
+                        <h6>File Organisation</h6>
+                     </a>
+                  </div>
+                  <div class="col-sm-3 text-center">
+                     <h5><strong>CSS Lessons</strong></h5>
+                     <a href="B.CSS/lessons/J-Creating-your-first-CSS-styles.html">
+                        <h6>Creating Your First CSS Styles</h6>
+                     </a>
+                     <a href="B.CSS/lessons/K-Common-CSS-styles.html">
+                        <h6>Common CSS Styles</h6>
+                     </a>
+                     <a href="B.CSS/lessons/L-Classes-and-ids.html">
+                        <h6>Classes and Ids</h6>
+                     </a>
+                     <a href="B.CSS/lessons/M-Divs-and-spans.html">
+                        <h6>Divs and Spans</h6>
+                     </a>
+                  </div>
+               </div>
+               <br/>
+               <hr/>
+               <h4 class="footer-company-name textwhite"> Copyright &copy; 2019 Sithum Dissanayake. All rights reserved.</h4>
+            </div>
+         </div>
