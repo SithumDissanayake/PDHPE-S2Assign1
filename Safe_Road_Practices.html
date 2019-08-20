@@ -1,7 +1,14 @@
+<!--
+   // This project is submitted as part of the assessment for Year 9 IST.
+   // This is all our own work. We have referenced any work used from other
+   // sources and have not plagiarised the work of others.
+   // (signed) Sithum Dissanayake
+   -->
+<!--This Validates as HTML5-->
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>PDHPE Road Safety Campaign</title>
+      <title>PDHPE Road Safety Campaign - Common Road Accidents</title>
       <meta charset="UTF-8" />
       <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -22,6 +29,7 @@
       <meta name="theme-color" content="#ffffff">
       <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
       <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" rel="stylesheet"/>
+      <!--CSS-->
       <style>
          *{
          font-family: Comfortaa;
@@ -29,7 +37,7 @@
          /* Common CSS for the Navbar */
          .navbar {
          margin-bottom: 0;
-         background-color: #5BC0EB !important;
+         background-color: #9BC53D !important;
          z-index: -1;
          border: 0;
          line-height: 1.42 !important;
@@ -42,7 +50,7 @@
          }
          .navbar-nav li a:hover,
          .navbar-nav li.active a {
-         color: #5BC0EB !important;
+         color: #9BC53D !important;
          background-color: #211A1E !important;
          }
          .navbar-default .navbar-toggle {
@@ -71,12 +79,12 @@
          margin-bottom: 0px !important;
          z-index: 0 !important;
          position: fixed;
-         background: #cccccc url("images/background.jpg") no-repeat fixed center;
+         background: #cccccc url("images/PromMockCrash10-jpg.jpg") no-repeat fixed center;
          height: 100vh;
          width: 100vw;
          }
          .jumbotron-content {
-         color: #5BC0EB;
+         color: #9BC53D;
          text-shadow: #211A1E 0.3em 0.3em 0.3em !important;
          transform: translate(-50%, -50%) !important;
          width: 100% !important;
@@ -106,109 +114,25 @@
          color:white !important;
          }
          .pagecontent{
-         top: 100vh;
-         }
-         .bg-blue {
-         background-color: #5BC0EB !important;
+         top: 50vh;
          }
          .bg-grey {
-         background-color: #211A1E !important;
+         background-color: #9BC53D !important;
          }
          .bg-white{
          background-color: white !important;
          }
-         /* CSS Specific for the Page Content of this page */
-         .pagecontent{
-         top: 100vh;
+         .img-size{
+         width:85%;
          }
-         .intro-container-fluid{
-         padding: 60px 8%;
-         line-height: 2;
-         letter-spacing:0.1px;
-         width: 100vw;
-         }
-         .www-panel {
-         border: 1px solid #C3423F;
-         border-radius:0;
-         transition: box-shadow 0.5s;
-         }
-         .html-panel {
-         border: 1px solid #FDE74C;
-         border-radius:0;
-         transition: box-shadow 0.5s;
-         }
-         .css-panel {
-         border: 1px solid #9BC53D;
-         border-radius:0;
-         transition: box-shadow 0.5s;
-         }
-         .www-panel:hover {
-         box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-         }
-         .html-panel:hover {
-         box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-         }
-         .css-panel:hover {
-         box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-         }
-         .www-panel-heading {
-         color: #fff !important;
-         background-color: #C3423F !important;
-         padding: 24px;
-         font-size: 20px !important;
-         border-bottom: 1px solid transparent;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 0px;
-         border-bottom-right-radius: 0px;
-         }
-         .html-panel-heading {
-         color: #fff !important;
-         background-color: #FDE74C !important;
-         padding: 24px;
-         font-size: 20px !important;
-         border-bottom: 1px solid transparent;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 0px;
-         border-bottom-right-radius: 0px;
-         }
-         .css-panel-heading {
-         color: #fff !important;
-         background-color: #9BC53D !important;
-         padding: 24px;
-         font-size: 20px !important;
-         border-bottom: 1px solid transparent;
-         border-top-left-radius: 0px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 0px;
-         border-bottom-right-radius: 0px;
-         }
-         .www-panel-body {
-         padding: 20px;
-         text-align: Justify;
-         margin: 0px 0px 1.33% 0px;
-         }
-         .html-panel-body {
-         padding: 20px;
-         text-align: Justify;
-         }
-         .css-panel-body {
-         padding: 20px;
-         text-align: Justify;
-         margin: 0px 0px 6.45% 0px;
-         }
-         .www-panel-footer{
-         margin: -30px 0px 15px 0px;
-         color: #fff;
-         }
-         .html-panel-footer{
-         margin: -30px 0px 15px 0px;
-         color: #fff;
-         }
-         .css-panel-footer {
-         margin: -30px 0px 15px 0px;
-         color: #fff;
+         pre{
+         display: inline-block;
+         padding: 10px;
+         margin: 10px 0 20px 0;
+         font-family: 'Anonymous Pro', monospace !important;
+         font-size: 0.8em;
+         white-space: pre;
+         word-wrap: normal;
          }
          a:link {
          color:white;
@@ -236,6 +160,17 @@
          background-color: #211A1E !important;
          color: #222f3e;
          }
+         /* CSS Specific for the Main Sign of this page */
+         .jumbotron{
+         background:#9BC53D url('images/road.png') no-repeat fixed center;
+         height: 50vh;
+         width: 100vw;
+         }
+         .jumbotron-content{
+         position: absolute !important;
+         top: 55% !important;
+         left: 50% !important;
+         }
       </style>
       <!--This is jQuery from Google CDN and can be found at: https://developers.google.com/speed/libraries/-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -247,7 +182,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    </head>
-   <body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+   <body id="top">
       <!--Navbar-->
       <div class="navbar navbar-default navbar-fixed-top">
          <div class="container">
@@ -262,79 +197,85 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">PDHPE Road Safety Campaign</a>
+               <a class="navbar-brand" href="index.html">PDHPE Road Safety Campaign</a>
             </div>
             <div class="collapse navbar-collapse" id="mainNavbar">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="Consquences_of_Bad_Driving.html" style="color: #C3423F;">Consquences of Bad Driving</a></li>
+                  <li><a href="Consquences_of_Bad_Driving.html" style="color: #9BC53D;">Consquences of Bad Driving</a></li>
                   <li><a href="Common_Road_Accidents.html" style="color: #FDE74C;">Common Road Accidents</a></li>
                   <li><a href="Safe_Road_Practices.html" style="color: #9BC53D;">Safe Road Practices</a></li>
                </ul>
             </div>
          </div>
       </div>
+      <!--Main Sign-->
       <div class="textwhite jumbotron text-center">
          <div class="jumbotron-content">
-            <h1>Road Safety Campaign</h1>
-            <h3>By Sithum Dissanayake</h3>
-            <a href="#introductions">
-            <img class="down-arrow animated infinite slideInDown" src="images/arrows/down-arrow.png" alt="downarrow"/>
-            </a>
+            <h1>Safe Road Practices</h1>
          </div>
       </div>
-      <div class="pagecontent bg-white" id="introductions">
-         <!--Intro To Flow Coding and What It Will Teach-->
-         <div class="container-fluid bg-blue text-center textwhite">
-            <h2>Hey You!</h2>
-            <h4 class="text-center">Are you a teenager planning to get a licence? Well before you do start applying for your licence it is very important that you know all the risks before you get on the road. Many of these risks will be outlined on this site. </h4>
-            <br/>
-         </div>
-         <!-- Introductions to WWW, HTML and CSS -->
-         <div class="intro-container-fluid  bg-white">
-            <div class="row">
-               <div class="col-sm-4">
-                  <div class="www-panel www-panel-default text-center">
-                     <div class="www-panel-heading">
-                        <h2>Consquences of Bad Driving</h2>
-                     </div>
-                     <div class="www-panel-body">
-                        <h4></h4>
-                     </div>
-                     <div class="www-panel-footer">
-                        <a href="A.HTML/index.html" class="btn btn-lg" role="button">Click Here!</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-4">
-                  <div class="html-panel html-panel-default text-center">
-                     <div class="html-panel-heading">
-                        <h2>Common Road Accidents</h2>
-                     </div>
-                     <div class="html-panel-body">
-                        <h4></h4>
-                     </div>
-                     <div class="html-panel-footer">
-                        <a href="A.HTML/index.html" class="btn btn-lg" role="button">Click Here!</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-4">
-                  <div class="css-panel css-panel-default text-center">
-                     <div class="css-panel-heading">
-                        <h2>Safe Road Practices</h2>
-                     </div>
-                     <div class="css-panel-body">
-                        <h4></h4>
-                     </div>
-                     <div class="css-panel-footer">
-                        <a href="B.CSS/index.html" class="btn btn-lg">Click Here!</a>
-                     </div>
-                  </div>
-               </div>
+      <div class="pagecontent bg-white">
+         <!--MainContent-->
+         <div class= "container-fluid bg-grey textwhite text-center">
+               <p style= "font-size: 18px">
+                  This page will show tips and tricks for helping you, the new (or going to be) driver, as well as how to avoid common mistakes done by new drivers.
+               </p>
             </div>
-         </div>
-         <!--Footer/Glossary-->
-         <div class="container-fluid text-center bg-grey textwhite">
+            <div class="container-fluid text-center bg-white">
+               <h4>The <strong><u>3</u></strong> Second Rule to Avoid Tailgating</h4>
+               <br/>
+               <br/>
+               <p><span style="font-size: 16px">What is tailgating?</span>
+               Tailing gating is the act of being too close to the are infront of you meaning there is a higher chance of hitting them.
+               <span style="font-size: 16px">How to avoid this</span>
+               The easiest way to avoid tailgating is to always keep a three second gap between you and the car infront of you.
+               3 seconds might be a confusing way to look at how much space to keep between you and the car in front of you but this is easily explained.
+            </p>
+            <img src="images/3SecondRule.jpg" width="55%"/>
+            <br/>
+            <br/>
+            <p>
+               The way to measure three seconds is to use a fixed point, e.g. a tree as seen in the example, to count the distance between you and the car in front of you. Once the car in front of you have passed the fixed point start counting in your head until your car has reached the point. If the time is three seconds good job! You are the right distance behind the car in front of you. If the time is longer than three seconds you should speed up a little and if its less it most likely means you are tailgating or close to it and you should slow down.
+            </p>
+            </div>
+            <div class="container-fluid bg-grey textwhite text-center">
+               <h4>Remove Distractions</strong></h4>
+               <br/>
+               <img src="rearEnd.png"/>
+               <br/>
+               <br/>
+               <br/>
+               <p>The most common reason for a rear end crash with driver 1 at fault is when driver 1 is tailgating driver 2. Tailgating is the act of driving too close to the car in front of you</p>
+            </div>
+            <div class="container-fluid text-center bg-white">
+               <h4>Third Most Common Young Driver Crash: <strong><u>Off Road</u></strong></h4>
+               <br/>
+               <img src="offRoad.png"/>
+               <br/>
+               <br/>
+               <br/>
+               <p>The reason off road crashes are the third most common type of crash is generally because of fatigue. A driver while fatigued will start to slide over to one side as they grow more drowsy, if they lean to the right, they will hit the window and wake the driver up. If they lean forward they will hit the steering wheel and be woken. But if the driver leans to the left there is nothing to stop their body and wake them up, this results in the driver dragging the wheel with them as they lean to the left, meaning they drive to the left and go offroad and crash</p>
+            </div>
+            <div class="container-fluid bg-grey textwhite text-center">
+               <h4>Fourth Most Common Young Driver Crash: <strong><u>Rear End,</u> Driver 2 at fault</strong></h4>
+               <br/>
+               <img src="rearEnd.png"/>
+               <br/>
+               <br/>
+               <br/>
+               <p>Rear end crashs where driver 2 is at fault are generally because of a sudden lane change that driver 2 makes at much slower speed than road 1. This frequently happens when there is traffic or an accident up ahead. Driver 2 don’t realize that you are already in the lane and traveling at a much faster speed than they are, or they simply never saw you or never cared to look before changing lanes. Resulting in Driver 2  suddenly appears in your lane, traveling much slower than you, and there is nothing you can do to avoid the collision.</p>
+            </div>
+            <div class="container-fluid text-center bg-white">
+               <h4>Least Common Young Driver Crash: <strong><u>Cross Traffic</u></strong></h4>
+               <br/>
+               <img src="crossTraffic.png"/>
+               <br/>
+               <br/>
+               <br/>
+               <p>The reason cross traffic crashes are caused are similiar to the right through crash, it is a misscalculating of speed and time. Either this or Driver 1 is in hurry and try to drive past your quickly.</p>
+            </div>
+            <!--Footer/Glossary-->
+            <div class="container-fluid bg-grey textwhite text-center">
             <div class="row">
                <div class="col-sm-12 text-center">
                   <a href="#top">
@@ -349,30 +290,30 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-sm-3 text-center">
-                  <br/>
-                  <a href="index.html">
-                     <h5><u>Main Page</u></h5>
-                  </a>
-               </div>
-               <div class="col-sm-3 text-center">
-                  <br/>
-                  <a href="Consquences_of_Bad_Driving.html">
-                     <h5><u>Consquences of Bad Driving</u></h5>
-                  </a>
-               </div>
-               <div class="col-sm-3 text-center">
-                  <br/>
-                  <a href="Common_Road_Accidents.html">
-                     <h5><u>Common Road Accidents</u></h5>
-                  </a>
-               </div>
-               <div class="col-sm-3 text-center">
-                  <br/>
-                  <a href="Safe_Road_Practices.html">
-                     <h5><u>Safe Road Practices</u></h5>
-                  </a>
-               </div>
+                  <div class="col-sm-3 text-center">
+                        <br/>
+                        <a href="index.html">
+                           <h5><u>Main Page</u></h5>
+                        </a>
+                     </div>
+                     <div class="col-sm-3 text-center">
+                        <br/>
+                        <a href="Consquences_of_Bad_Driving.html">
+                           <h5><u>Consquences of Bad Driving</u></h5>
+                        </a>
+                     </div>
+                     <div class="col-sm-3 text-center">
+                        <br/>
+                        <a href="Common_Road_Accidents.html">
+                           <h5><u>Common Road Accidents</u></h5>
+                        </a>
+                     </div>
+                     <div class="col-sm-3 text-center">
+                        <br/>
+                        <a href="Safe_Road_Practices.html">
+                           <h5><u>Safe Road Practices</u></h5>
+                        </a>
+                     </div>
             </div>
             <br/>
             <br/>
@@ -384,12 +325,12 @@
          $(document).ready(function(){
          // Add smooth scrolling to all links
          $("a").on('click', function(event) {
-
+         
          // Make sure this.hash has a value before overriding default behavior
          if (this.hash !== "") {
          // Prevent default anchor click behavior
          event.preventDefault();
-
+         
          // Store hash
          var hash = this.hash;
          // Using jQuery's animate() method to add smooth page scroll
@@ -397,7 +338,7 @@
          $('html, body').animate({
          scrollTop: $(hash).offset().top
          }, 800, function(){
-
+         
          // Add hash (#) to URL when done scrolling (default click behavior)
          window.location.hash = hash;
          });
